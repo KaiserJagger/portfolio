@@ -5,9 +5,16 @@ import './styles/SectionBody.css'
 
 const ContentBody = () => {
   const [circleVisible, setCircleVisible] = useState(true);
+  const [isAnimating, setIsAnimating] = useState(false);
 
+
+  
   const toggleCircleAnimation = () => {
-    setCircleVisible(!circleVisible);
+    setIsAnimating(true);
+    setTimeout(() => {
+      setCircleVisible(!circleVisible);
+      setIsAnimating(false);
+    }, 1000); // Ajusta la duración de la animación aquí
   };
 
 
@@ -29,12 +36,9 @@ const ContentBody = () => {
         </div>
       </div>
       <div className="body-part-2">
-        <div className="proyect-animation-class">
-          <div className="proyect">
-            {/* <img className='kj' src="/assets/kj.png" alt="Kj" />   */}
-            <button onClick={toggleCircleAnimation}>Skills</button>
-          </div>
-          <div className={`circle ${circleVisible ? '' : 'hidden'}`} style={{ animation: 'animateCircle 40s linear infinite' }}>
+      <div className="proyect-animation-class">
+        <div className={`proyect ${isAnimating ? 'disappear' : ''}`}>
+          <div className="circle">
             <span style={{ '--i': 1 }}><img className='node' src="/assets/node-js.png" alt="Node.js" /></span>
             <span style={{ '--i': 2 }}><img className='mdb' src="/assets/mongodb.png" alt="MongoDB" /></span>
             <span style={{ '--i': 3 }}><img className='kali' src="/assets/SVGIcons/kali-logo.svg" alt="Kali" /></span>
@@ -47,7 +51,11 @@ const ContentBody = () => {
             <span style={{ '--i': 10 }}><img className='html' src="/assets/html.png" alt="HTML" /></span>
             <span style={{ '--i': 11 }}><img className='html' src="/assets/express.png" alt="express" /></span>
           </div>
+          </div>
         </div>
+        <div className='pulse'>
+          <button onClick={toggleCircleAnimation}>Skills</button>
+          </div>
         <div className="background-circle"></div>
         
       </div>
