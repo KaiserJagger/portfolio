@@ -91,7 +91,8 @@
     width: 550px;
     height: 550px;
     z-index: 9;
-
+    /* Agregado para la transición de opacidad y transformación */
+    transition: opacity 0.5s, transform 0.5s;
   }
   
   .proyect {
@@ -136,11 +137,11 @@
   }
   
 
-  .circle.disappear {
+  /* .circle.disappear {
     opacity: 0;
     transition: transform 2s ease-in-out, opacity 2s ease-in-out;
     
-  }
+  } */
   
   @keyframes animateCircle {
     0% {
