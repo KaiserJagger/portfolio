@@ -35,7 +35,7 @@ const Introduction = () => {
     <div className="cards">
       <div className="design-card active">
         <div>
-          <h3>Backend Development</h3>
+        <h3>Backend- Development</h3>
           <i className="fas fa-terminal"></i>
         </div>
         <p>Crafting High-Performance Web Systems</p>
@@ -55,24 +55,24 @@ const Introduction = () => {
             <i className="fa-solid fa-database"></i>
           </div>
           <p>Mastery of MySQL Database Management</p>
-          <h5>5 PROJECTS</h5>
+          <h5>1 PROJECTS</h5>
         </div>
       </div>
       </div>
       <div className="introduction-text">
-        <h4>Crafting High-Performance Web Systems</h4>
+        <h2>Crafting High-Performance Web Systems</h2>
         <p>As a backend developer, I specialize in crafting high-performance and reliable systems using JavaScript 
           to create servers with Node.js and MongoDB. My expertise spans various domains, including e-commerce, 
           live chat integration, server creation with Express, and the implementation of currency conversion APIs.</p>
       </div>
       <div className="introduction-text" style={{ display: 'none' }}>
-        <h4>Crafting User Interfaces</h4>
+        <h2>Crafting User Interfaces</h2>
         <p>As a frontend designer, my passion is bringing engaging and highly functional user interfaces to life. 
           I utilize my expertise in HTML, CSS, and JavaScript, along with my current focus on implementing React, 
           to create intuitive and visually striking user experiences.</p>
       </div>
       <div className="introduction-text" style={{ display: 'none' }}>
-        <h4>Mastery of MySQL Database Management</h4>
+        <h2>Mastery of MySQL Database Management</h2>
         <p>I not only focus on the development of backend and frontend applications, but also design efficient databases, 
           create schemas, optimize SQL queries, and manage data security. This secondary skill enables me to tackle 
           projects that involve a high volume of data.</p>

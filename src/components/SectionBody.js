@@ -33,7 +33,7 @@ const ContentBody = () => {
       </div>
       <div className="body-part-2">
       <div className="proyect-animation-class">
-        <div className={`proyect ${isAnimating ? 'disappear' : ''}`}>
+      <div className="hologram-content">
           <div className="circle">
             <span style={{ '--i': 1 }}><img className='node' src="/assets/node-js.png" alt="Node.js" /></span>
             <span style={{ '--i': 2 }}><img className='mdb' src="/assets/mongodb.png" alt="MongoDB" /></span>
