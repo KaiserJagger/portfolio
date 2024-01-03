@@ -36,7 +36,7 @@ const LatestWorks = () => {
           <img src="assets/Projects/project-1.png" alt="" className="project-img-2" />
         </div>
 
-        <div className="project-card project-card-3">
+        <div className="project-card project-card-3"> 
           <div className="title">
             <h3>JumpingMan</h3>
             <div className="tech-stack">

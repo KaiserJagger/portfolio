@@ -102,3 +102,37 @@ body::selection {
 ::-webkit-scrollbar-thumb:hover{
   background: #FEFEFE;
 }
+
+@media (max-width: 768px) {
+  #content-body {
+    padding: 50px 10px; /* Ajusta el padding para pantallas más pequeñas */
+  }
+
+  .body-part-1 {
+    text-align: center; /* Centra el contenido en pantallas más pequeñas */
+  }
+
+  .developer-intro {
+    margin-bottom: 20px; /* Aumenta el espacio entre el intro y el título */
+  }
+
+  .body-title h1 {
+    font-size: 40px; /* Reduzca el tamaño del título */
+  }
+
+  .body-title p {
+    font-size: 18px; /* Reduzca el tamaño del texto de descripción */
+  }
+
+  .body-tail {
+    flex-direction: column; /* Cambia la dirección de la columna en pantallas más pequeñas */
+    align-items: center; /* Centra los elementos en pantallas más pequeñas */
+  }
+
+  .body-tail h1,
+  .body-tail p {
+    text-align: center; /* Centra el texto en pantallas más pequeñas */
+  }
+
+  /* Agrega estilos adicionales según sea necesario */
+}

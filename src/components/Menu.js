@@ -1,19 +1,30 @@
 
-import React from 'react';
-import './styles/Menu.css'
-import './styles/SectionBody.css'
-
+import React, { useState } from 'react';
+import './styles/Menu.css';
+import './styles/SectionBody.css';
 
 const Menu = () => {
+  // Estado para controlar la visibilidad del menú en pantallas pequeñas
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  // Función para manejar el clic en el botón de menú
+  const handleMenuToggle = () => {
+    setMenuVisible(!menuVisible);
+  };
+
   return (
     <section id="header">
       <div className="navbar-title">
-        <h3 className="title-first-name">
-          KaiserJagger
-        </h3>
+        <h3 className="title-first-name">KaiserJagger</h3>
       </div>
       <div>
-        <ul className="navbar-menu">
+        {/* Botón de menú para pantallas pequeñas */}
+        <button id="menu-toggle" onClick={handleMenuToggle}>
+          &#9776; Menu
+        </button>
+
+        {/* Menú de navegación */}
+        <ul className={`navbar-menu ${menuVisible ? 'active' : ''}`}>
           <li><a className="active" href="#content-body">&lt; Home &gt;</a></li>
           <li><a className="" href="#latest-works">Works</a></li>
           <li><a className="" href="#introduction">About me</a></li>

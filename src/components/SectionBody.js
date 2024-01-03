@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/GlobalStyles.css';
-import './styles/SectionBody.css'
+import './styles/SectionBody.css';
 
 const ContentBody = () => {
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuVisible(!menuVisible);
+  };
+
   return (
     <section id="content-body">
       <div className="body-part-1">
@@ -13,7 +19,7 @@ const ContentBody = () => {
           <h1>Full-Stack Developer</h1>
           <p>Crafting dynamic web experiences where design meets seamless functionality</p>
         </div>
-        <div className="body-tail"> 
+        <div className="body-tail">
           <h1>1</h1>
           <p>YEARS<br />EXPERIENCE</p>
           <h1>10</h1>
