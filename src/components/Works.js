@@ -45,7 +45,7 @@ const LatestWorks = () => {
               <p>HTML</p>
             </div>
           </div>
-          <img src="assets/Projects/project.png" alt="" className="project-img-3" />
+          <img src="assets/Projects/jumping-man.png" alt="" className="project-img-3" />
         </div>
       </div>
       <div className="right-project">
