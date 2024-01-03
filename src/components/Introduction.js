@@ -2,6 +2,7 @@ import {React, useEffect} from 'react';
 import './styles/GlobalStyles.css';
 import './styles/Introduction.css'
 
+
 const Introduction = () => {
   useEffect(() => {
     const designCardButtons = document.querySelectorAll('.design-card');
@@ -29,7 +30,7 @@ const Introduction = () => {
   return (
     <section id="introduction">
       <div className="introduction-header">
-        <h2 className="title">About Me</h2>
+        <h2 className="title-intro">About Me</h2>
       </div>
       <div className="content-container">
     <div className="cards">
@@ -61,21 +62,27 @@ const Introduction = () => {
       </div>
       <div className="introduction-text">
         <h2>Crafting High-Performance Web Systems</h2>
-        <p>As a backend developer, I specialize in crafting high-performance and reliable systems using JavaScript 
-          to create servers with Node.js and MongoDB. My expertise spans various domains, including e-commerce, 
-          live chat integration, server creation with Express, and the implementation of currency conversion APIs.</p>
+        <p>As a backend developer, I specialize in crafting reliable and high-performance systems using JavaScript, Node.js, and MongoDB. 
+          My expertise spans various domains, including e-commerce, live chat integration, server creation with Express, 
+          and the implementation of APIs
+        </p>
+        {/* <img className='introduction-image' src="/assets/backend.png" alt="Backend" /> */}
       </div>
       <div className="introduction-text" style={{ display: 'none' }}>
         <h2>Crafting User Interfaces</h2>
         <p>As a frontend designer, my passion is bringing engaging and highly functional user interfaces to life. 
           I utilize my expertise in HTML, CSS, and JavaScript, along with my current focus on implementing React, 
-          to create intuitive and visually striking user experiences.</p>
+          to create intuitive and visually striking user experiences.
+        </p>
+          {/* <img className='frontend' src="/assets/frontend.png" alt="Frontend" /> */}
       </div>
       <div className="introduction-text" style={{ display: 'none' }}>
         <h2>Mastery of MySQL Database Management</h2>
         <p>I not only focus on the development of backend and frontend applications, but also design efficient databases, 
           create schemas, optimize SQL queries, and manage data security. This secondary skill enables me to tackle 
-          projects that involve a high volume of data.</p>
+          projects that involve a high volume of data.
+        </p>
+        {/* <img className='frontend' src="/assets/ddbb.jpg" alt="FrontendS" /> */}
       </div>
     </section>
   );

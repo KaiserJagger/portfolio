@@ -1,19 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/GlobalStyles.css';
 import './styles/SectionBody.css'
 
 const ContentBody = () => {
-  const [circleVisible, setCircleVisible] = useState(true);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const toggleCircleAnimation = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCircleVisible(!circleVisible);
-      setIsAnimating(false);
-    }, 1500); // Ajusta la duración de la animación aquí
-  };
-
   return (
     <section id="content-body">
       <div className="body-part-1">
@@ -49,12 +38,7 @@ const ContentBody = () => {
           </div>
           </div>
         </div>
-        <div className='pulse'>
-
-          <button onClick={toggleCircleAnimation}>Skills</button>
-          </div>
         <div className="background-circle"></div>
-        
       </div>
     </section>
   );

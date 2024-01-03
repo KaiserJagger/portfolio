@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="footer-email-intro">
           <p>Information</p>
           <h6>San Miguel de Tucumán, Argentina <br/>CP: 4000</h6>
-          <h3>tanmoytssaha@gmail.com</h3>
+          <h3>kaiserjager10@gmail.com</h3>
         </div>
       </div>
     </section>
