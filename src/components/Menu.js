@@ -25,7 +25,7 @@ const Menu = () => {
 
         {/* Menú de navegación */}
         <ul className={`navbar-menu ${menuVisible ? 'active' : ''}`}>
-          <li><a className="active" href="#content-body">&lt; Home &gt;</a></li>
+          <li><a className="active" href="#content-body">Home</a></li>
           <li><a className="" href="#latest-works">Works</a></li>
           <li><a className="" href="#introduction">About me</a></li>
           <li><a className="" href="#footer">Contacts</a></li>

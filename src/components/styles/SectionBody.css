@@ -134,7 +134,7 @@
       transform: perspective(1000px) rotateY(0deg) rotateX(15deg) translateY(0);
     }
     100% {
-      transform: perspective(1000px) rotateY(360deg) rotateX(15deg) translateY(-30px);
+      transform: perspective(1000px) rotateY(360deg) rotateX(15deg) translateY(0);
     }
   }
 
@@ -292,8 +292,7 @@
 
   .circle {
     margin-top: 40px;
-    margin-left: -510px;
-    position: absolute;
+    margin-left: -600px;
     transform: translateX(-40%) rotateX(15deg);
     width: 60px;
     height: 60px;
